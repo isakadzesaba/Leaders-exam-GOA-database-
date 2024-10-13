@@ -1,0 +1,59 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sign Up Section -->
+        <div id="sign-up-section">
+            <h1>Sign Up</h1>
+            <form id="registration-form" onsubmit="SignIn(event)">
+                <label for="first-name">Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Lastname:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="none">Select a Role</option>
+                    <option value="visitor">Viewer</option>
+                    <option value="moderator">Moderator</option>
+                </select>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <!--Tables Section (Hidden) -->
+        <div id="data-tables" class="hidden">
+            <h2>Tables</h2>
+
+            <!-- Group 23 -->
+            <div class="table" id="group-23">
+                <h3>Group 23</h3>
+                <div class="children-data">
+                    <p>Name: ნიკოლოზ</p>
+                    <p>Lastname: კვირიკაშვილი</p>
+                    <p>Age: 7</p>
+                    <p>Leader: თაზო გოგიშვილი</p>
+                </div>
+            </div>
+
+            <!-- Group 22 -->
+            <div class="table" id="group-22">
+                <h3>Group 22</h3>
+                <div class="children-data">
+                    <p>Name: მათე</p>
+                    <p>Lastname: როსტიაშვილი</p>
+                    <p>Age: 9</p>
+                    <p>Leader: გიორგი გვრიტიშვილი</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
